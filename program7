@@ -1,0 +1,14 @@
+a=int(input("Enter the first number"))
+b=int(input("Enter the second number"))
+c=int(input("Enter the third number"))
+if(a>b)and(a>c):
+    print(a,"the largest number is:")
+elif(b>c)and(b>a):
+        print(b,"the largest number is:")
+else:
+            print(c,"is the largest number")
+            output
+            Enter the first number10
+Enter the second number20
+Enter the third number30
+30 is the largest number
