@@ -1,0 +1,14 @@
+number=int(input("please enter any number:"))
+total=0
+value=1
+while(value<=number):
+    total=total+value
+    value=value+1
+    print("The sum of natural number from 1 to{0}".format(number,total))
+    output
+    please enter any number:5
+The sum of natural number from 1 to5
+The sum of natural number from 1 to5
+The sum of natural number from 1 to5
+The sum of natural number from 1 to5
+The sum of natural number from 1 to5
