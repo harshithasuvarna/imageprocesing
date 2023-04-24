@@ -1,0 +1,26 @@
+fibonacciList=[0,1]
+N=10
+term=3
+while term<N+1:
+    value=fibonacciList[term-2]+fibonacciList[term-3]
+    fibonacciList.append(value)
+    term=term+1
+    print("10 terms of the fibonacci series are:")
+    print(fibonacciList)
+    output
+10 terms of the fibonacci series are:
+[0, 1, 1]
+10 terms of the fibonacci series are:
+[0, 1, 1, 2]
+10 terms of the fibonacci series are:
+[0, 1, 1, 2, 3]
+10 terms of the fibonacci series are:
+[0, 1, 1, 2, 3, 5]
+10 terms of the fibonacci series are:
+[0, 1, 1, 2, 3, 5, 8]
+10 terms of the fibonacci series are:
+[0, 1, 1, 2, 3, 5, 8, 13]
+10 terms of the fibonacci series are:
+[0, 1, 1, 2, 3, 5, 8, 13, 21]
+10 terms of the fibonacci series are:
+[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]    
