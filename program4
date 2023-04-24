@@ -1,0 +1,10 @@
+number=int(input("please enter any  number:"))
+i=1
+print("The list of natural number from 1to{0}are".format(number))
+while(i<=number):
+    print(i,end='')
+    i=i+1
+    output
+    please enter any  number:3
+The list of natural number from 1to3are
+123
