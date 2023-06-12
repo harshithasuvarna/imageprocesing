@@ -1,0 +1,51 @@
++*In[ ]:*+
+[source, ipython3]
+----
+from PIL import Image
+from PIL import ImageFilter
+imageObject = Image.open("./sharp.png");
+imageObject.show();
+sharpened1 = imageObject.filter(ImageFilter.SHARPEN);
+sharpened2 = sharpened1.filter(ImageFilter.SHARPEN);
+sharpened1.show();
+sharpened2.show();
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+import cv2
+import numpy as np
+
+original_image=cv2.imread("nature1.png")
+cv2.imshow('original image',original_image)
+cv2.waitKey(0)
+sharpen_filter=np.array([[-1,-1,-1],
+                 [-1,9,-1],
+                [-1,-1,-1]])
+
+sharp_image=cv2.filter2D(original_image,-1,sharpen_filter)
+cv2.imshow('Required image',sharp_image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+import cv2
+img = cv2.imread('car.jpg')
+img_v = cv2.flip(img, 0)
+cv2.imshow("Vertical Flip", img_v)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
